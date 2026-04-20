@@ -258,3 +258,50 @@ blockquote {
 .barra-progreso.js { background-color: #bb00b2; } 
 .barra-progreso.git { background-color: #1100ff; } 
 .barra-progreso.react { background-color: #ff9100; }
+
+.listas-contenedor {
+    display: flex;
+    gap: 2rem;
+}
+
+.tarjeta-lista {
+    background-color: rgb(152, 175, 238);
+    flex: 1;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.tarjeta-lista h3 {
+    color: #000000;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.etiqueta-html {
+    background-color: #2406d1;
+    color: rgb(0, 0, 0);
+    font-size: 0.7rem;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.lista-items {
+    padding-left: 1.5rem;
+    color: #000000;
+}
+
+.lista-items li {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .listas-contenedor {
+        flex-direction: column;
+    }
+}
