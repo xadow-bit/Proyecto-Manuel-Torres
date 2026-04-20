@@ -1,4 +1,4 @@
-*  {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,9 +9,9 @@
     --primary-bg: #2c323b; 
     --accent-color: #2e65ac;
     --text-light: #887d7d;
-    --text-muted: #0000008a;
+    --text-muted: #44689b;
     --text-dark: #000000;
-    --bg-body: #4b6279;
+    --bg-body: #557492;
 }
 
 body {
@@ -132,7 +132,7 @@ header {
     width: 250px;  
     height: 250px;
     border-radius: 50%; 
-    border: 5px solid rgba(156, 156, 156, 0.808);
+    border: 5px solid rgba(0, 0, 0, 0.808);
     object-fit: cover; 
 }
 
@@ -189,5 +189,72 @@ blockquote {
 
 .tarjeta-datos li {
     padding: 0.8rem 0;
-    border-bottom: 1px solid #162d4e;
+    border-bottom: 1px solid #070f1a;
 }
+
+
+.habilidades {
+    background-color: var(--bg-body); 
+    padding: 5rem 5%;
+}
+
+.habilidades-contenedor {
+    display: flex;
+    flex-direction: column; 
+    gap: 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.tabla-contenedor {
+    width: 100%;
+    background-color: rgb(144, 175, 187);
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(182, 159, 159, 0.05);
+    overflow: hidden;
+}
+
+.tabla-skills {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-skills thead {
+    background-color: #000000;
+    color: white;
+}
+
+.tabla-skills th, 
+.tabla-skills td {
+    padding: 16px 24px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+.tabla-skills th {
+    font-weight: 600;
+}
+
+.celda-barra {
+    width: 40%;
+}
+
+.barra-fondo {
+    background-color: #fafafa;
+    height: 8px;
+    border-radius: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.barra-progreso {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.barra-progreso.html { background-color: #00caaf; } 
+.barra-progreso.css { background-color: #5cfc00; } 
+.barra-progreso.js { background-color: #bb00b2; } 
+.barra-progreso.git { background-color: #1100ff; } 
+.barra-progreso.react { background-color: #ff9100; }
