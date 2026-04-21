@@ -305,3 +305,74 @@ blockquote {
         flex-direction: column;
     }
 }
+
+.proyectos {
+    padding: 5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.galeria-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.proyecto-card {
+    background: rgba(176, 213, 255, 0.596);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+}
+
+.img-proyecto {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.proyecto-card figcaption {
+    padding: 1.5rem;
+}
+
+.proyecto-categoria {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+}
+
+.proyecto-card h3 {
+    margin: 0.5rem 0;
+    color: var(--primary-bg);
+}
+
+.proyecto-card p {
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.proyecto-card a {
+    color: var(--primary-bg);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.contacto {
+    background-color: white;
+    padding: 5rem 5%;
+}
+
+.contacto-contenedor {
+    display: flex;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
