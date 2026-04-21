@@ -123,7 +123,7 @@
                         </tbody>
                     </table>
                 </div>
-                
+
                 <div class="listas-contenedor">
                     <div class="tarjeta-lista">
                         <h3>Competencias Técnicas <span class="etiqueta-html">&lt;ul&gt;</span></h3>
@@ -144,6 +144,7 @@
                         </ol>
                     </div>
                 </div>
+                
             </div>
         </section>
 
@@ -155,7 +156,8 @@
 
             <div class="galeria-proyectos">
                 <figure class="proyecto-card">
-                    <img src="mi-foto2.jpg" alt="Captura de mi proyecto Landing Page" width="100" height="200" class="img-proyecto">
+                    <img src="mi-foto2.jpg" alt="Captura de mi proyecto Landing Page" width="400" height="200" class="img-proyecto">
+                    <figcaption>
                     <figcaption>
                         <span class="proyecto-categoria">Proyecto web - Landing page</span>
                         <h3>Landing Page</h3>
@@ -176,41 +178,112 @@
                 <figure class="proyecto-card">
                     <img src="mi-foto4.jpg" alt="Captura de mi proyecto Landing Page" width="400" height="200" class="img-proyecto">
                     <figcaption>
+                    <figcaption>
                         <span class="proyecto-categoria">Proyecto web - Dashboard</span>
                         <h3>Dashboard Admin</h3>
                         <p>Panel de administración con gráficos y tablas de datos.</p>
                         <a href="https://github.com" target="_blank">Ver repositorio &rarr;</a>
                     </figcaption>
                 </figure>
-            </figure>
-            <figure class="proyecto-card">
-                <img src="mi-foto5.jpg" alt="Captura de mi proyecto Landing Page" width="400" height="200" class="img-proyecto">
-                <figcaption>
-                    <span class="proyecto-categoria">Proyecto web - App móvil</span>
-                    <h3>App Clima</h3>
-                    <p>Aplicación del clima con API externa y diseño responsivo.</p>
-                    <a href="https://github.com" target="_blank">Ver repositorio &rarr;</a>
-                </figcaption>
-            </figure>
-            <figure class="proyecto-card">
-                <img src="mi-foto6.jpg" alt="Captura de mi proyecto Landing Page" width="400" height="200" class="img-proyecto">
-                <figcaption>
-                <figcaption>
-                    <span class="proyecto-categoria">Proyecto web - E-commerce</span>
-                    <h3>Tienda Online</h3>
-                    <p>E-commerce básico con catálogo de productos y carrito.</p>
-                    <a href="https://github.com" target="_blank">Ver repositorio &rarr;</a>
-                </figcaption>
-            </figure>
-            <figure class="proyecto-card">
-                <img src="mi-foto7.jpg" alt="Captura de mi proyecto Landing Page" width="400" height="200" class="img-proyecto">
-                <figcaption>
-                <figcaption>
-                    <span class="proyecto-categoria">Proyecto web - Portafolio</span>
-                    <h3>Portafolio v1</h3>
-                    <p>Primera versión de mi portafolio profesional.</p>
-                    <a href="https://github.com" target="_blank">Ver repositorio &rarr;</a>
-                </figcaption>
-            </figure>
-        </div>.
-    </section>
+                <figure class="proyecto-card">
+                    <img src="mi-foto5.jpg" alt="Captura de mi proyecto Landing Page" width="400" height="200" class="img-proyecto">
+                    <figcaption>
+                    <figcaption>
+                        <span class="proyecto-categoria">Proyecto web - App móvil</span>
+                        <h3>App Clima</h3>
+                        <p>Aplicación del clima con API externa y diseño responsivo.</p>
+                        <a href="https://github.com" target="_blank">Ver repositorio &rarr;</a>
+                    </figcaption>
+                </figure>
+                <figure class="proyecto-card">
+                    <img src="mi-foto6.jpg" alt="Captura de mi proyecto Landing Page" width="400" height="200" class="img-proyecto">
+                    <figcaption>
+                    <figcaption>
+                        <span class="proyecto-categoria">Proyecto web - E-commerce</span>
+                        <h3>Tienda Online</h3>
+                        <p>E-commerce básico con catálogo de productos y carrito.</p>
+                        <a href="https://github.com" target="_blank">Ver repositorio &rarr;</a>
+                    </figcaption>
+                </figure>
+                <figure class="proyecto-card">
+                    <img src="mi-foto7.jpg" alt="Captura de mi proyecto Landing Page" width="400" height="200" class="img-proyecto">
+                    <figcaption>
+                    <figcaption>
+                        <span class="proyecto-categoria">Proyecto web - Portafolio</span>
+                        <h3>Portafolio v1</h3>
+                        <p>Primera versión de mi portafolio profesional.</p>
+                        <a href="https://github.com" target="_blank">Ver repositorio &rarr;</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+        
+        <section id="contacto" class="contacto">
+            <div class="seccion-titulo">
+                <h2>Contacto</h2>
+                <p class="subtitulo">Envíame un mensaje</p>
+            </div>
+
+            <div class="contacto-contenedor">
+                <form class="formulario">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="" disabled selected>Selecciona un asunto</option>
+                            <option value="trabajo">Propuesta laboral</option>
+                            <option value="freelance">Proyecto Freelance</option>
+                            <option value="consulta">Consulta general</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+
+                <aside class="info-contacto">
+                    <div class="tarjeta-datos">
+                        <h3>Información de contacto</h3>
+                        <ul class="info-lista">
+                            <li><strong>Email:</strong> manueltorreslagos734@email.com</li>
+                            <li><strong>Ubicación:</strong> Concepción, Chile</li>
+                            <li><strong>Teléfono:</strong> +56 9 1234 5678</li>
+                            <li><strong>GitHub:</strong> <a href="#">github.com/mtorres</a></li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="logo">
+                <span class="logo-icon">MT</span>
+                <span class="logo-text">Manuel Torres Lagos</span>
+            </div>
+            <div class="redes-sociales">
+                <a href="#">GH</a>
+                <a href="#">LI</a>
+                <a href="#">TW</a>
+                <a href="#">IG</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2026 Manuel Torres Lagos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
